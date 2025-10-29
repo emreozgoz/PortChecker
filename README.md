@@ -6,6 +6,19 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-cyan)
 
+## ⚠️ Important: Local Development Only
+
+**This application is designed to run LOCALLY on your machine!**
+
+❌ **DO NOT deploy to Netlify, Vercel, or any cloud hosting!**
+
+**Why?** PortChecker uses system commands (`lsof`, `netstat`, `kill`) to monitor ports on **YOUR** local machine. Cloud platforms run in isolated serverless environments and:
+- Cannot access your local machine's ports
+- Don't have the necessary system commands
+- Would only show the cloud server's ports (meaningless)
+
+✅ **How to use:** Run `npm run dev` on your own computer!
+
 ## ✨ Features
 
 - 🔍 **Real-time Port Monitoring** - Track active ports with auto-refresh every 3 seconds
